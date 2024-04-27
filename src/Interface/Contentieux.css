@@ -1,0 +1,319 @@
+.corps {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:200vh;
+    background-image: url("C:\Users\hh\stage\FrontEnd\public\images\TRESORE.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Image de fond fixe */
+    overflow: hidden;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    position: relative;
+  }
+  
+  .boîte-connexion {
+    position: absolute;
+    top: 60%; /* Ajuster la valeur pour déplacer la boîte */
+    left: 50%;
+    width: 1200px;
+    padding: 49px;
+    margin: 300px auto ;
+    transform: translate(-50%, -50%);
+    background: rgba(200, 100, 13, 0.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    z-index: 1; /* Mettre au-dessus de l'image de fond */
+  }
+  .boîte-connexion p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .boîte-connexion .zone-utilisateur {
+    position: relative;
+  }
+  
+  .boîte-connexion .zone-utilisateur input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .boîte-connexion .zone-utilisateur label select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .boîte-connexion .zone-utilisateur input:focus ~ label,
+  .boîte-connexion .zone-utilisateur input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .boîte-connexion form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .boîte-connexion a:hover {
+    background:  #e5912b;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .boîte-connexion a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .boîte-connexion a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    /* background: linear-gradient(90deg, transparent, #e5912b); */
+    background-color:transparent;
+
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .boîte-connexion a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(180deg, transparent, #fff); */
+    background: linear-gradient(90deg, transparent, #e5912b);
+
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .boîte-connexion a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    /* background: linear-gradient(270deg, transparent, #fff); */
+    background: linear-gradient(90deg, transparent, #e5912b);
+
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .boîte-connexion a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(360deg, transparent, #fff); */
+    background-color:  #e5912b;
+
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s;
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .boîte-connexion p:last-child {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .boîte-connexion a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .boîte-connexion a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+  
+  .button-borders button {
+    margin-right: 10px;
+}
+
+.button-borders button:last-child {
+    margin-right: 0;
+}
+
+/* 
+.contentieux-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contentieux-table th,
+.contentieux-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.contentieux-table th {
+  background-color: #f2f2f2;
+}
+
+.contentieux-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.contentieux-table tr:hover {
+  background-color: #ddd;
+} */
+
+:root {
+  --primary-color: #007bff; 
+  --secondary-color: #6c757d; 
+  --light-gray: #f8f9fa; 
+}
+
+
+.contentieux-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.contentieux-table th,
+.contentieux-table td {
+  border: 1px solid var(--light-gray);
+  padding: 12px;
+  text-align: left;
+}
+
+.contentieux-table th {
+  background-color: var(--light-gray);
+  font-weight: bold;
+}
+
+.contentieux-table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.contentieux-table tr:hover {
+  background-color: #e9ecef; 
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

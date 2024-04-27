@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(197, 119, 40, 0.873);
+    color: white;
+    height: 60px;
+    /* border-bottom: 2px solid #000; */
+    z-index: 2;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.right-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.boddy {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("C:\Users\hh\stage\FrontEnd\public\images\TRESORE.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);  
+    overflow: hidden;
+    position: fixed;
+}

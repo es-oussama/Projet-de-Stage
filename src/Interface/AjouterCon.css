@@ -1,0 +1,60 @@
+/* Styles pour le conteneur du tableau */
+.boddy {
+    padding: 20px; /* Ajout de padding pour espacer du haut */
+}
+
+/* Styles pour le tableau */
+.boîte-connexion-table {
+    width: 90%; /* Réduire la largeur du tableau */
+    max-width: 800px; /* Limiter la largeur maximale */
+    border-collapse: collapse;
+    background-color: rgba(200, 100, 13, 0.9);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    margin: 0 auto; /* Centrer le tableau horizontalement */
+    z-index: 2; /* Ajouter un z-index */
+}
+
+/* Styles pour les en-têtes de colonnes */
+.boîte-connexion-table th {
+    padding: 10px; /* Réduire le padding */
+    text-align: center;
+    color: #fff;
+    font-size: 1rem; /* Réduire la taille de la police */
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Styles pour les cellules de données */
+.boîte-connexion-table td {
+    padding: 8px; /* Réduire le padding */
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem; /* Réduire la taille de la police */
+    border-bottom: 1px solid #fff;
+}
+
+/* Styles pour les lignes impaires */
+.boîte-connexion-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles pour les boutons Modifier et Supprimer */
+.boîte-connexion-table .primary-button {
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 12px; /* Réduire la taille de la police */
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 6px 12px; /* Réduire le padding */
+    background-color: rgba(200, 100, 13, 0.9);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boîte-connexion-table .primary-button:hover {
+    background-color: #e5912b;
+}
