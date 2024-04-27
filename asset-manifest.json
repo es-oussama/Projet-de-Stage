@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Projet-de-Stage/static/css/main.487b405e.css",
+    "main.js": "/Projet-de-Stage/static/js/main.b416d4c8.js",
+    "static/js/453.ec2164ec.chunk.js": "/Projet-de-Stage/static/js/453.ec2164ec.chunk.js",
+    "static/media/TRESORE.jpg": "/Projet-de-Stage/static/media/TRESORE.3f63c044988805630d0a.jpg",
+    "index.html": "/Projet-de-Stage/index.html",
+    "main.487b405e.css.map": "/Projet-de-Stage/static/css/main.487b405e.css.map",
+    "main.b416d4c8.js.map": "/Projet-de-Stage/static/js/main.b416d4c8.js.map",
+    "453.ec2164ec.chunk.js.map": "/Projet-de-Stage/static/js/453.ec2164ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.487b405e.css",
+    "static/js/main.b416d4c8.js"
+  ]
+}
