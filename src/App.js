@@ -65,7 +65,24 @@ function AppContent() {
           <div className='logout'>
 
             
-            <img src="\images\logout.png" onClick={handleLogout} width={"30px"} height={"auto"} style={{ marginRight: "25px" }} alt='logout'></img>
+            <img src="/images/logout.png"
+             onClick={handleLogout}
+              // width={"30px"} height={"auto"} 
+            //  style={{ marginRight: "25px" }} 
+             alt='logout'
+             style={{ 
+              marginRight: "25px",
+              backgroundImage: "url('C:\Users\hh\stage\FrontEnd\public\images\logout.png')",
+              // backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              width: "30px",  
+              height: "auto"  
+}} 
+>
+              
+
+
+             </img>
           
 
         </div>
