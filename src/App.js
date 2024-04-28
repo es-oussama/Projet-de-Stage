@@ -48,7 +48,7 @@ function AppContent() {
     <div>
       <header className="header">
         <div className="logo">
-          <img src="/images/Logo.png" alt="Company Logo" />
+          <div className="CompanyLogo" ></div>
         </div>
         <h1>GESTION DE CONTENTIEUX</h1>
         <div className="right-links">
@@ -63,37 +63,9 @@ function AppContent() {
             </button>
           </Link>
           <div className='logout'>
-
-            
-            <img src="/images/logout.png"
-             onClick={handleLogout}
-              // width={"30px"} height={"auto"} 
-            //  style={{ marginRight: "25px" }} 
-             alt='logout'
-             style={{ 
-              marginRight: "25px",
-              backgroundImage: "url('C:\Users\hh\stage\FrontEnd\public\images\logout.png')",
-              // backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              width: "30px",  
-              height: "auto"  
-}} 
->
-              
-
-
-             </img>
-          
-
+            <div onClick={handleLogout}className='photo2' >
+             </div>
         </div>
-        {/* Afficher les boutons "Déconnexion" et "Changer Password" uniquement sur la page Contentieux  */}
-         {/* {location.pathname === "/Contentieux" && (
-            <div className="header-buttons">
-              <Link to="/ChangerPassword">
-                <button className="signupBtn">Changer Mot de Passe</button>
-              </Link>
-            </div>
-          )} */}
     </div> 
       </header >
 

@@ -1,0 +1,17 @@
+.photo2 {
+    margin-right: 25px;
+    background-image: url('C:\\Users\\hh\\stage\\FrontEnd\\public\\images\\logout.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;  
+    height: 30px;  
+}
+.CompanyLogo{
+    margin-left: 20px;
+    background-image: url('C:\\Users\\hh\\stage\\FrontEnd\\public\\images\\Logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;  
+    height: 80px;
+
+}
